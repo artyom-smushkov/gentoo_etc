@@ -1,0 +1,33 @@
+#!/sbin/openrc-run
+# Copyright 2008-2025 Gentoo Authors
+# Distributed under the terms of the GNU General Public License v2 or later
+
+: "${EMACS:=/usr/bin/emacs}"
+: "${EMACS_START:=/usr/libexec/emacs/emacs-wrapper.sh}"
+: "${EMACS_SIGNAL_TIMEOUT:=TERM/30/KILL/5}"
+
+description="Start an Emacs server running in the background"
+
+supervisor=supervise-daemon
+command="${EMACS_START}"
+command_args="${EMACS_OPTS}"
+command_args_foreground="--fg-daemon"
+retry="${EMACS_SIGNAL_TIMEOUT}"
+
+depend() {
+    after dbus
+}
+
+start_pre() {
+    # EMACS could be a microemacs variant that ignores the -batch option
+    # and would therefore hang, waiting for user interaction.
+    # Redirecting stdin and unsetting TERM and DISPLAY will cause most
+    # of them to exit with an error.
+    if [ "$(unset TERM DISPLAY; ${EMACS} -batch -q --no-site-file \
+            --eval "(princ (fboundp 'daemonp))" </dev/null)" != t ]; then
+        eerror "${EMACS} does not support running as a daemon"
+        return 1
+    fi
+
+    export EMACS
+}

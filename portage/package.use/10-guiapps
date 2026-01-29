@@ -1,0 +1,6 @@
+app-editors/emacs tree-sitter gui gtk -X dynamic-loading jit
+gnome-base/nautilus -previewer
+gui-apps/waybar network mpris
+xfce-base/thunar -trash-panel-plugin
+xfce-base/tumbler ffmpeg
+media-sound/deadbeef converter lastfm cover notify

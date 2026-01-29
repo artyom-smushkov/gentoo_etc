@@ -1,0 +1,26 @@
+gui-apps/foot
+# move gui-apps/swww gui-apps/awww
+gui-apps/awww
+gui-apps/swaync
+x11-themes/adw-gtk3
+www-client/firefox
+media-sound/helvum
+sys-apps/mission-center
+net-im/telegram-desktop
+net-im/slack
+media-gfx/darktable
+media-sound/reaper-bin
+media-sound/ardour
+media-sound/easyeffects
+net-misc/turbovnc
+games-util/steam-launcher
+net-vpn/proton-vpn-gtk-app 
+net-misc/anydesk
+app-text/papers
+media-gfx/loupe
+media-video/droidcam
+gui-apps/fuzzel
+gui-apps/walker
+app-editors/logseq-desktop-bin
+media-sound/gapless
+media-sound/easytag

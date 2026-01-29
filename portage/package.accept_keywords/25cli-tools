@@ -1,0 +1,7 @@
+app-shells/fish
+app-admin/chezmoi
+app-text/pandoc
+app-text/typst
+sys-fs/duf
+sys-process/procs
+dev-embedded/dfu-programmer

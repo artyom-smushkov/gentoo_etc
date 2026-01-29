@@ -1,0 +1,4 @@
+app-text/pandoc-cli
+dev-haskell/*
+dev-lang/ghc
+app-admin/haskell-updater

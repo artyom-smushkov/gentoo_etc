@@ -1,0 +1,4 @@
+sci-misc/llama-cpp hip -vulkan curl
+# required by media-sound/gapless-4.4::guru[pipewire]
+# required by gapless (argument)
+>=media-video/pipewire-1.4.9-r1 gstreamer

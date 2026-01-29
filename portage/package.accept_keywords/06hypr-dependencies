@@ -1,0 +1,10 @@
+dev-cpp/sdbus-c++
+gui-libs/hyprutils
+gui-libs/aquamarine
+dev-libs/hyprland-protocols
+dev-libs/hyprgraphics
+gui-libs/hyprcursor
+gui-libs/xdg-desktop-portal-hyprland
+dev-util/hyprwayland-scanner
+dev-libs/hyprlang
+sys-devel/gcc

@@ -1,0 +1,5 @@
+media-video/pipewire sound-server jack-sdk
+media-sound/pulseaudio -daemon
+# required by gui-apps/swaync-0.11.0::guru
+# required by gui-apps/swaync (argument)
+>=gui-libs/gtk-layer-shell-0.9.2 vala introspection
